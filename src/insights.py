@@ -97,7 +97,7 @@ def matches_salary_range(job, salary):
     is_numeric_value_range_salary(job)
     does_salary_range_makes_sense(job)
     is_numeric_value_salary(salary)
-    if job["min_salary"] <= salary <= job["max_salary"]:
+    if int(job["min_salary"]) <= int(salary) <= int(job["max_salary"]):
         return True
     return False
 
